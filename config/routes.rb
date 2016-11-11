@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get '/signup' => 'users#new',as: :new_signup
   post '/signup' => 'users#create'
-  get '/user/index' =>'users#index'as: :new_index
+  get '/user/index' =>'users#index',as: :new_index
  
   get '/login' =>'sessions#new',as: :new_login
   get '/record' =>'records#new',as: :new_record
