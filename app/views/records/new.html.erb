@@ -1,0 +1,52 @@
+<div class="container">
+<h2></h2>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create new event</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+ <%= form_for :user do |f| %>
+
+   <%= f.label :event_name %>
+   <%= f.text_field :event_name %><br><br>
+
+   <%= f.label :place%>
+   <%= f.text_field :place %></br></br>
+
+   <%= f.label :date %>
+   <%= f.text_field :date %><br><br>
+   
+   <%= f.label :time%>
+   <%= f.text_field :time %><br><br>
+  
+   <%= f.label :invitees %>
+   <%= f.text_field :invitees%><br><br>
+
+   <%= f.label :status %>
+   <%= f.text_field :status%><br><br>
+
+ <% end %>
+</div>
+</div>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</div>

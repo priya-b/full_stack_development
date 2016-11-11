@@ -1,0 +1,57 @@
+
+<div class="container">
+<h2></h2>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">create new event</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+  <%= form_for(:user) do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %></br></br>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %></br></br>
+
+
+    <%= f.label :user_name %>
+    <%= f.text_field :user_name %></br></br>
+
+
+    <%= f.label :email %>
+    <%= f.text_field :email %></br></br>
+
+    
+    
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %></br></br>
+
+
+    <%= f.label :password %>
+    <%= f.password_field :password %></br></br>
+
+
+    <%= f.label :password_confirmation, "Confirmation" %>
+    <%= f.password_field :password_confirmation %></br></br>
+
+<%= f.submit %>
+    
+  <% end %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
